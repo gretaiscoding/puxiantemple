@@ -6,10 +6,10 @@ const Navbar = () => {
     <nav>
       <h2>PuXian Temple</h2>
       <div className="nav-links">
-        <a href="">About Us</a>
+        <a href="">About</a>
+        <a href="">Events</a>
         <a href="">Contact Us</a>
-        <a href="">Learn Buddhism</a>
-        <a href="">Donate</a>
+        <a href="" id='donate-btn'>Donate</a>
       </div>
     </nav>
   );
