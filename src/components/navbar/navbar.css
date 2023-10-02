@@ -1,0 +1,62 @@
+nav {
+  margin: auto;
+  padding: 2rem 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  gap: 2rem;
+
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#donate-btn {
+  padding: 12px 24px 12px 24px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+
+  font-size: 1rem;
+  white-space: nowrap;
+
+  color: #ffffff;
+  background-color: #c79447;
+
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#donate-btn > a {
+  color: black;
+}
+
+#donate-btn a {
+  color: black; /* Set the default text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Add a transition for smooth color change */
+}
+
+#donate-btn:hover a {
+  color: white;
+}
+
+#donate-btn:hover {
+  background-color: black;
+}
+
+#logo-name {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
