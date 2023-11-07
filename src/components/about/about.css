@@ -1,0 +1,24 @@
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.about__container :is(.section__header, .section__subheader) {
+  text-align: left;
+}
+
+.about__content {
+  margin-left: 4rem;
+}
+
+.about__content p {
+  margin-bottom: 1.5rem;
+}
+
+.about__image img {
+  max-width: 450px;
+  margin-left: 30%;
+  align-items: center;
+}
