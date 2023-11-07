@@ -1,0 +1,59 @@
+.hero__container {
+  margin: auto;
+  padding: 12rem 1rem;
+}
+
+.hero__container h1 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: var(--header-font);
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+}
+
+.section__header {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-family: var(--header-font);
+  text-align: center;
+}
+
+.hero__button-container {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 1rem;
+}
+
+.hero__button {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #c79447;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.hero__button > a {
+  color: black;
+}
+
+.hero__button a {
+  color: var(--white); /* Set the default text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Add a transition for smooth color change */
+}
+
+.hero__button:hover a {
+  color: white;
+}
+
+.hero__button:hover {
+  background-color: black;
+}
