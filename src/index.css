@@ -1,6 +1,23 @@
-<<<<<<< HEAD
-=======
-body {
+:root {
+  --primary-color: black;
+  --primary-color-light: #f6f4f5;
+  --secondary-color: #c79447;
+  --white: #ffffff;
+  --header-font: 'Sorts Mill Goudy', serif;
+}
+
+* {
+  padding: 0;
   margin: 0;
 }
->>>>>>> 48be2e099304d044929da6c9581d15f4d10b23df
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: 'Sen', sans-serif;
+}

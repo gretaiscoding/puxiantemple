@@ -4,7 +4,7 @@ import './navbar.css';
 const Navbar = () => {
   return (
     <nav>
-      <h2 id="logo-name">PuXian Temple</h2>
+      <h2>Pu Xian Temple</h2>
       <div className="nav-links">
         <a href="">About</a>
         <a href="">Events</a>
