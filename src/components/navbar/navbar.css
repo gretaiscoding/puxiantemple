@@ -7,7 +7,14 @@ nav {
   justify-content: space-between;
 }
 
-.nav-links {
+.nav__logo {
+  font: 1.2rem;
+  font-family: var(--header-font);
+  color: #ffffff;
+  padding-left: 2.5rem;
+}
+
+.nav__links {
   list-style: none;
   display: flex;
   align-items: center;

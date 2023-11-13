@@ -5,8 +5,15 @@
   align-items: center;
 }
 
+.section__header {
+  font-family: 'Sorts Mill Goudy', serif;
+
+  font-size: 10em;
+}
+
 .about__container :is(.section__header, .section__subheader) {
   text-align: left;
+  font-family: var(--header-font);
 }
 
 .about__content {

@@ -1,6 +1,6 @@
 .header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent),
-    url('/');
+    url('../../images/hero.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

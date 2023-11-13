@@ -1,12 +1,13 @@
 import React from 'react';
 import './about.css';
+import { getImageUrl } from '../../utils/form-tools';
 
 const About = () => {
   return (
     <section>
       <div class="section__container about__container">
         <div class="about__image">
-          <img src="/images/about.jpg" alt="puxian-temple" />
+          <img src={getImageUrl('about.jpg')} alt="puxian-temple" />
         </div>
         <div class="about__content">
           <h2 class="section__header">About Us</h2>
