@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500&family=Sorts+Mill+Goudy:ital@0;1&display=swap");
 
 :root {
   --primary-color: black;
   --primary-color-light: #f6f4f5;
   --secondary-color: #c79447;
   --white: #ffffff;
-  --header-font: 'Sorts Mill Goudy', serif;
+  --header-font: "Sorts Mill Goudy", serif;
 }
 
 * {
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Sen', sans-serif;
+  font-family: "Sen", sans-serif;
 }
 
 .section__container {
@@ -89,7 +89,7 @@ body {
 
 header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent),
-    url('/images/hero.jpg');
+    url("/images/hero.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -114,7 +114,7 @@ header {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-style: italic;
-  font-family: 'Sen', sans-serif;
+  font-family: "Sen", sans-serif;
   color: #ffffff;
   text-align: center;
   margin: auto;
@@ -203,7 +203,7 @@ header {
 }
 
 .about_content p {
-  font-family: 'Sen', sans-serif;
+  font-family: "Sen", sans-serif;
   line-height: 1.5rem;
 }
 
@@ -297,7 +297,7 @@ header {
 }
 
 .slider_scrollbar .scrollbar_thumb::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
