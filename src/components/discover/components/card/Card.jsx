@@ -1,23 +1,35 @@
-import React from 'react';
-import { getImageUrl } from '../../../../utils/form-tools';
+import React from "react";
+import { getImageUrl } from "../../../../utils/form-tools";
+import "./card.css";
 
 const Card = ({ image_name, label, title, date, address }) => {
   return (
-    <div class="discover__card">
-      <div class="discover__image">
+    <div className="discover__card">
+      <div className="discover__image">
         <img src={getImageUrl(image_name)} alt="november" />
       </div>
-      <div class="discover__card__content">
-        <span class="label">{label}</span>
+      <div className="discover__card__content">
         <h4>{title}</h4>
-        <span class="test">
-          <img src={getImageUrl('calendar.png')} alt="icon" class="icon" />
-          <p>{date}</p>
-        </span>
-        <span class="test">
-          <img src={getImageUrl('location.png')} alt="icon" class="icon" />
-          <p>{address} </p>
-        </span>
+        <p className="discover__card__label">{label}</p>
+
+        <div className="discover__card__date-and-address">
+          <span className="test">
+            <img
+              src={getImageUrl("calendar.png")}
+              alt="icon"
+              className="icon"
+            />
+            <p>{date}</p>
+          </span>
+          <span className="test">
+            <img
+              src={getImageUrl("location.png")}
+              alt="icon"
+              className="icon"
+            />
+            <p>{address} </p>
+          </span>
+        </div>
       </div>
     </div>
   );

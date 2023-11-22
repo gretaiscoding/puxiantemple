@@ -1,31 +1,25 @@
 .about__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  align-items: center;
-}
+  display: flex;
+  /* justify-content: space-between; */
 
-.section__header {
-  font-family: 'Sorts Mill Goudy', serif;
+  height: 70vh;
+  width: 80%;
 
-  font-size: 10em;
-}
-
-.about__container :is(.section__header, .section__subheader) {
-  text-align: left;
-  font-family: var(--header-font);
-}
-
-.about__content {
-  margin-left: 4rem;
-}
-
-.about__content p {
-  margin-bottom: 1.5rem;
+  margin: auto;
+  border-color: #f6f4f5;
 }
 
 .about__image img {
-  max-width: 450px;
-  margin-left: 30%;
-  align-items: center;
+  height: 22em;
+}
+
+.about__content {
+  max-width: 40%;
+  margin-left: 6em;
+  /* background-color: red; */
+}
+
+.about__header {
+  font-size: 3rem;
+  font-family: var(--header-font);
 }
