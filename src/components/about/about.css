@@ -1,12 +1,16 @@
 .about__container {
   display: flex;
-  /* justify-content: space-between; */
+  align-items: center;
+  justify-content: space-evenly;
 
   height: 70vh;
   width: 80%;
 
-  margin: auto;
-  border-color: #f6f4f5;
+  margin: 0 auto;
+  padding: 0 2em;
+  box-sizing: border-box;
+
+  /* background-color: red; */
 }
 
 .about__image img {
@@ -15,11 +19,19 @@
 
 .about__content {
   max-width: 40%;
-  margin-left: 6em;
+  height: 90%;
+  /* background-color: purple; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* margin-left: 6em; */
   /* background-color: red; */
 }
 
 .about__header {
   font-size: 3rem;
   font-family: var(--header-font);
+
+  margin-bottom: 0.25em;
 }

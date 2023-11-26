@@ -1,7 +1,7 @@
-import React from "react";
-import "./discover.css";
-import { getImageUrl } from "../../utils/form-tools";
-import Card from "./components/card/Card";
+import React from 'react';
+import './discover.css';
+import { getImageUrl } from '../../utils/tool';
+import Card from './components/card/Card';
 
 const Discover = () => {
   return (
@@ -12,27 +12,27 @@ const Discover = () => {
 
       <div class="discover__card-container">
         <Card
-          title={"Opening of Pu Xian Statue"}
-          date={"December 10, 2023 (Sunday)"}
-          label={"FREE ENTRY"}
-          image_name={"opening.jpeg"}
+          title={'Opening of Pu Xian Statue'}
+          date={'December 10, 2023 (Sunday)'}
+          label={'FREE ENTRY'}
+          image_name={'opening.jpeg'}
           address={` Puxian Temple, Jalan Bukit Dumbar, Jelutong, 11600 George Town,
           Pulau Pinang`}
         />
         <Card
-          title={"Puxian Birthday"}
-          date={"March 30, 2024 (Sunday)"}
-          label={"FREE ENTRY"}
-          image_name={"opening.jpeg"}
+          title={'Puxian Birthday'}
+          date={'March 30, 2024 (Sunday)'}
+          label={'FREE ENTRY'}
+          image_name={'opening.jpeg'}
           address={` Puxian Temple, Jalan Bukit Dumbar, Jelutong, 11600 George Town,
           Pulau Pinang`}
         />
 
         <Card
-          title={"Blood Donation"}
-          date={"April 8, 2024 (Sunday)"}
-          label={"FREE ENTRY"}
-          image_name={"opening.jpeg"}
+          title={'Blood Donation'}
+          date={'April 8, 2024 (Sunday)'}
+          label={'FREE ENTRY'}
+          image_name={'opening.jpeg'}
           address={` Puxian Temple, Jalan Bukit Dumbar, Jelutong, 11600 George Town,
           Pulau Pinang`}
         />

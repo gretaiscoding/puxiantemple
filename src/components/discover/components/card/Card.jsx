@@ -1,6 +1,6 @@
-import React from "react";
-import { getImageUrl } from "../../../../utils/form-tools";
-import "./card.css";
+import React from 'react';
+import { getImageUrl } from '../../../../utils/tool';
+import './card.css';
 
 const Card = ({ image_name, label, title, date, address }) => {
   return (
@@ -15,7 +15,7 @@ const Card = ({ image_name, label, title, date, address }) => {
         <div className="discover__card__date-and-address">
           <span className="test">
             <img
-              src={getImageUrl("calendar.png")}
+              src={getImageUrl('calendar.png')}
               alt="icon"
               className="icon"
             />
@@ -23,7 +23,7 @@ const Card = ({ image_name, label, title, date, address }) => {
           </span>
           <span className="test">
             <img
-              src={getImageUrl("location.png")}
+              src={getImageUrl('location.png')}
               alt="icon"
               className="icon"
             />
