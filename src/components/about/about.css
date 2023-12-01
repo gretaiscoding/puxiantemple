@@ -1,4 +1,4 @@
-.about__container {
+/* .about__container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -9,8 +9,6 @@
   margin: 0 auto;
   padding: 0 2em;
   box-sizing: border-box;
-
-  /* background-color: red; */
 }
 
 .about__image img {
@@ -20,13 +18,10 @@
 .about__content {
   max-width: 40%;
   height: 90%;
-  /* background-color: purple; */
 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* margin-left: 6em; */
-  /* background-color: red; */
 }
 
 .about__header {
@@ -34,4 +29,82 @@
   font-family: var(--header-font);
 
   margin-bottom: 0.25em;
+} */
+
+/* Existing CSS */
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70vh;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 2em;
+  box-sizing: border-box;
+}
+
+.about__image img {
+  height: 22em;
+}
+
+.about__content {
+  max-width: 40%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about__header {
+  font-size: 3rem;
+  font-family: var(--header-font);
+  margin-bottom: 0.25em;
+}
+
+/* Responsive Design Adjustments */
+/* Tablet Devices */
+@media screen and (max-width: 768px) {
+  .about__container {
+    flex-direction: column;
+    height: auto;
+    padding: 1em;
+  }
+
+  .about__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about__content {
+    max-width: 100%;
+    padding-top: 1em;
+  }
+
+  .about__header {
+    font-size: 2.5rem;
+  }
+
+  .section__subheader {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+  .about__container {
+    padding: 0.5em;
+  }
+
+  .about__header {
+    font-size: 2rem;
+  }
+
+  .section__subheader {
+    font-size: 0.8rem;
+  }
+
+  .button-gold {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
 }

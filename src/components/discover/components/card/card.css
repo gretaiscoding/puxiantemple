@@ -1,20 +1,44 @@
 .discover__card__content {
-  /* background-color: red; */
-
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end; */
-  /* justify-content: space-evenly; */
 }
 
 .discover__card__label {
-  /* display: inline-block; */
   padding: 5px 5px;
   background-color: black;
   border-radius: 4px;
   margin: 0 auto 0 0;
 
   color: white;
-  font-family: "Sen", sans-serif;
+  font-family: 'Sen', sans-serif;
   font-size: 0.75rem;
+}
+
+.discover__card__icon {
+  max-height: 20px;
+}
+
+/* ChatGPT */
+@media screen and (max-width: 1024px) {
+  .discover__card__content h4 {
+    font-size: 1.5rem; /* Adjusted font size */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .discover__card {
+    max-width: 90%; /* Adjust for mobile */
+  }
+
+  .discover__card__content {
+    padding: 1rem 1rem; /* Adjust padding */
+  }
+
+  .discover__card__content h4 {
+    font-size: 1.2rem; /* Further adjusted font size */
+  }
+
+  .discover__card-container img {
+    height: 10rem; /* Adjust image height */
+  }
 }
