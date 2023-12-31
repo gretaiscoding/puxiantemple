@@ -1,18 +1,17 @@
-import React from 'react';
 import './about.css';
 import { getImageUrl } from '../../utils/tool';
 
 const About = () => {
   return (
-    <section>
+    <section className="about">
       <div className="about__container">
         <div className="about__image">
-          <img src={getImageUrl('founding-4.jpeg')} alt="puxian-temple" />
+          <img src={getImageUrl('founding-4.jpeg')} alt="Pu Xian Temple" />
         </div>
         <div className="about__content">
-          <div className="about__content__text">
+          <div className="about__text">
             <h2 className="about__header">About Us</h2>
-            <p className="section__subheader">
+            <p className="about__subheader">
               In 1975, Bro. Tan Kooi Beng, founder of Pu Xian Temple,
               established the youngest non-sectarian Buddhist organization in
               Malaysia.
@@ -28,7 +27,6 @@ const About = () => {
               a 15-foot bronze Buddha statue, the largest in Penang.
             </p>
           </div>
-
           <button className="button-gold">Learn More</button>
         </div>
       </div>

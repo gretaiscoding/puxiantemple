@@ -51,4 +51,6 @@ body {
   background-color: #c79447;
   cursor: pointer;
   border-radius: 0.5rem;
+
+  max-width: 10em;
 }

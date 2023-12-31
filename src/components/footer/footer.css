@@ -1,19 +1,40 @@
-footer {
+/* Footer.css */
+.footer {
   display: flex;
   justify-content: space-between;
-
-  padding: 4rem;
-  margin-top: 2rem;
-
-  /* background-color: #f6f6f4; */
+  padding: 2rem;
+  margin-top: 1rem;
   color: black;
   border-top: 1px solid #d7d7d7;
-
   align-items: center;
+  transition: padding 0.3s ease-in-out;
 }
 
-footer h1 {
+.footer h1 {
   font-family: var(--header-font);
   font-style: italic;
-  color: black;
+}
+
+.footer__contact {
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer__contact .interactive:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .footer__name-and-address,
+  .footer__contact {
+    margin-bottom: 1rem;
+  }
 }

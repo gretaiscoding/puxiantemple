@@ -1,3 +1,3 @@
-export function getImageUrl(name, filetype) {
+export function getImageUrl(name) {
   return new URL(`../images/${name}`, import.meta.url).href;
 }

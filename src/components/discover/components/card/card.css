@@ -1,44 +1,84 @@
+.discover__card-container img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.discover__card__content {
+  padding: 2rem 2rem;
+}
+
+.discover__card__content img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.discover__card__content h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-family: var(--header-font);
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+}
+
+.discover__card__content p {
+  font-family: 'Sen', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.discover__card {
+  background-color: #f5f0ea;
+  padding: 1rem;
+  margin-bottom: 1rem; /* Added for better spacing between cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow for depth */
+}
+
+.discover__card__image {
+  width: 100%;
+  height: auto; /* Changed to auto for maintaining aspect ratio */
+  object-fit: cover;
+}
+
 .discover__card__content {
   display: flex;
   flex-direction: column;
+  padding: 0.5rem; /* Adjusted padding */
 }
 
 .discover__card__label {
-  padding: 5px 5px;
+  padding: 5px 10px; /* Adjusted padding */
   background-color: black;
-  border-radius: 4px;
-  margin: 0 auto 0 0;
-
   color: white;
-  font-family: 'Sen', sans-serif;
+  border-radius: 4px;
   font-size: 0.75rem;
+  margin: 0 auto 0 0;
+}
+
+.discover__card__date-and-address {
+  display: flex;
+  flex-direction: column; /* Changed for better layout on smaller screens */
+  gap: 0.5rem; /* Added gap for spacing */
 }
 
 .discover__card__icon {
   max-height: 20px;
+  margin-right: 0.5rem; /* Added margin for spacing */
 }
 
-/* ChatGPT */
-@media screen and (max-width: 1024px) {
-  .discover__card__content h4 {
-    font-size: 1.5rem; /* Adjusted font size */
-  }
-}
-
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .discover__card {
-    max-width: 90%; /* Adjust for mobile */
-  }
-
-  .discover__card__content {
-    padding: 1rem 1rem; /* Adjust padding */
+    max-width: 90%;
+    margin: auto; /* Center cards on mobile */
   }
 
   .discover__card__content h4 {
-    font-size: 1.2rem; /* Further adjusted font size */
+    font-size: 1.2rem; /* Adjusted font size for mobile */
   }
 
-  .discover__card-container img {
-    height: 10rem; /* Adjust image height */
+  .discover__card__content p {
+    font-size: 0.9rem; /* Adjusted font size for mobile */
   }
 }
