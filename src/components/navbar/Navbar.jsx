@@ -6,29 +6,36 @@ const Navbar = () => {
 
   useEffect(() => {
     if (isNavExpanded) {
-      document.body.classList.add('no-scroll');
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.classList.remove('no-scroll');
+      document.body.style.overflow = '';
     }
   }, [isNavExpanded]);
+
+  const toggleNav = () => {
+    setIsNavExpanded(!isNavExpanded);
+  };
 
   return (
     <nav>
       <h2 className="nav__logo">Pu Xian Temple</h2>
-      <button
-        className="nav__hamburger"
-        onClick={() => setIsNavExpanded(!isNavExpanded)}
-      >
-        Menu
+      <button className="nav__hamburger" onClick={toggleNav}>
+        <span className="hamburger-icon">☰</span>
       </button>
       <div className={`nav__links ${isNavExpanded ? 'expanded' : ''}`}>
-        <button className="nav__close" onClick={() => setIsNavExpanded(false)}>
-          Close
+        <button className="nav__close" onClick={toggleNav}>
+          <span className="close-icon">×</span>
         </button>
-        <a href="#">About</a>
-        <a href="#">Events</a>
-        <a href="#">Contact Us</a>
-        <a href="#" id="donate-btn">
+        <a href="#" className="nav__link">
+          About
+        </a>
+        <a href="#" className="nav__link">
+          Events
+        </a>
+        <a href="#" className="nav__link">
+          Contact Us
+        </a>
+        <a href="#" className="nav__link" id="donate-btn">
           Donate
         </a>
       </div>
